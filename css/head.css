@@ -1,0 +1,187 @@
+body{
+    background-color: #f6f6f6;
+}
+img{
+    align-items: center;
+}
+p{
+    text-align: center;
+    font: bold 14px "Adobe 黑体 Std",Arial, sans-serif;
+}
+span{
+    content: '';
+    font-family:"微软雅黑";
+    font-size:14px;
+    line-height: 40px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+hr{
+    text-align: center;
+}
+/*头部*/
+.head{
+    height: 140px;
+    z-index: 40;
+    background-color: #fff;
+}
+.head .top{
+    position: relative;
+    width: 100%;
+    height:40px;
+    background-color: #dfdfde;
+}
+.head .top .top_phone{
+    position: absolute;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    align-content: center;
+    margin-left:10%;
+}
+.head .top .top_menu{
+    display: inline-block;
+    float: right;
+    margin-right:10%;
+}
+.head .top .top_menu a{
+    font-family:"微软雅黑";
+    font-size:14px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000;
+}
+.head .bar{
+    position: absolute;
+    width: 100%;
+    /*background-color: #cccccc;*/
+}
+.head .bar .logo{
+    position: absolute;
+    float: left;
+    padding-top:20px;
+    padding-left:10%;
+}
+.head .bar .Bus-name{
+    position: absolute;
+    float: left;
+    margin-top: 25px;
+    margin-left: 16%;
+}
+.head .bar .Bus-name .name{
+    font: bold 24px "Adobe 黑体 Std", sans-serif;
+}
+.head .bar .menu{
+    position: relative;
+    width: 609px;
+    /*height: 100px;*/
+    float: right;
+    right:10%;
+}
+.head .bar .menu ul{
+    padding: 0;
+    list-style: none;
+    font: 0px 'Open Sans', Arial, Helvetica;
+}
+.head .bar .menu .menu-nav a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 87px;
+    height: 100%;
+    padding-top: 30px;
+}
+.head .bar .menu .menu-nav>li{
+    position: relative;
+    display: inline-block;
+    width: 87px;
+    height: 100px;
+    font-size:14px;
+    font-family:'Microsoft YaHei UI';
+}
+.head .bar .menu .menu-nav li:hover{
+    background-color: #f9f7f8;
+    box-sizing: border-box;
+    border-bottom:5px solid #3d9bd3;
+    transition:all .2s ease-in-out;
+}
+@media screen and (min-device-width:1440px){
+    /*不需要更多适配*/
+}
+@media screen and (min-device-width:1024px) and (max-device-width: 1439px) {
+    p,span{
+        font-size:12px;
+    }
+    .head .bar .Bus-name .name{
+        font: bold 20px "Adobe 黑体 Std", sans-serif;
+    }
+    .head .bar .logo{
+        padding-top:20px;
+        padding-left:5%;
+    }
+    .head .bar .Bus-name{
+        margin-left:13%;
+    }
+    .head .bar .menu{
+        right: 5%;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width: 1023px) {
+    .head{
+        height: 145px;
+    }
+    .head .top{
+        display: none;
+    }
+    .head .bar .box-logo{
+        position: relative;
+        text-align: center;
+        margin: 10px auto;
+        height: 60px;
+        display: block;
+    }
+    .head .bar .box-logo .logo{
+        position: static;
+        float: none;
+        padding:0;
+        height: 60px;
+        display: inline-block;
+    }
+    .head .bar .box-logo .Bus-name{
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        height: 60px;
+        float: none;
+        bottom: 10px;
+    }
+    .head .bar .menu{
+        display: block;
+        position: static;
+        float: none;
+        text-align: center;
+        width: 100%;
+        background-color: #3a3839;
+    }
+    .head .bar .menu .menu-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .head .bar .menu a, .head .bar .menu p{
+        color: #d3d3d3;
+    }
+    .head .bar .menu .menu-nav li{
+        height: 65px;
+    }
+    .head .bar .menu .menu-nav li a{
+        padding-top: 13px;
+    }
+    .head .bar .menu .menu-nav li:hover{
+        background-color: #000000;
+        box-sizing: border-box;
+        border-bottom:5px solid #2a658a;
+        transition:all .2s ease-in-out;
+    }
+}
+

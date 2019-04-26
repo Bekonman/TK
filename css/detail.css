@@ -1,0 +1,193 @@
+p{
+    font-family:"微软雅黑";
+}
+.photo{
+    height: 255px;
+    overflow: hidden;
+}
+.photo img{
+    position: relative;
+    /*height: 255px;*/
+    width: 100%;
+    top: -20px;
+}
+.content{
+    position: relative;
+    padding:0 160px;
+    height: 500px;
+    /*background-color: red;*/
+}
+.content .title p{
+    font:12px Arial, sans-serif;
+    text-align: left;
+    padding:10px 3px;
+    line-height:20px;
+}
+.content .title a:hover{
+    color: blue;
+}
+/*商品展示*/
+.content .show{
+    position: relative;
+}
+/*左边*/
+.content .show .left{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 420px;
+    /*background-color: yellow;*/
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #cccccc;
+}
+.content .show .left .big-photo{
+    position: relative;
+    height: 278px;
+    padding-top: 53px;
+}
+
+.content .show .left .find{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+.content .show .left .else-photo{
+    position: relative;
+    bottom: 0;
+}
+.content .show .left .else-photo ul li{
+    width: 20%;
+    height: 91px;
+    float: left;
+}
+
+/*右边*/
+.content .show .right{
+    position: relative;
+    float: left;
+    padding-left: 5%;
+    padding-top: 4%;
+    width: 60%;
+    height: 420px;
+    /*background-color: orange;*/
+    box-sizing: border-box;
+    /*border-left:1px solid #cccccc;*/
+}
+.content .show .right p{
+    text-align: left;
+}
+.content .show .right .blue-word,.content .show .right .black-word{
+    font: 25px "微软雅黑",Arial, sans-serif;
+    line-height: 40px;
+}
+.content .show .right .blue-word{
+    color: #468ad9;
+}
+.content .show .right .L-word{
+    font: 18px "微软雅黑",Arial, sans-serif;
+    line-height: 35px;
+}
+.content .show .right ul li p{
+    font-size: 12px;
+    line-height: 24px;
+}
+.content .show .right input{
+    position: absolute;
+    font-size: 21px;
+    color: #fff;
+    width: 25%;
+    height: 50px;
+    border-radius: 15px;
+    bottom: 7%;
+    background-color: #b5b5b5;
+}
+.content .show .right input:nth-of-type(1){
+    background-color: #468bd9;
+}
+.content .show .right input:nth-of-type(2){
+    right: 30%;
+}
+
+/*商品详情展示*/
+.shop-show{
+    position: relative;
+    text-align: center;
+}
+.shop-show .content-title{
+    height: 100px;
+    background-color: #b5b5b5;
+    padding:0 160px;
+}
+.shop-show .content-title ul li{
+    box-sizing: border-box;
+}
+.shop-show .content-title ul li a{
+    margin:0 40px;
+    padding:5px;
+    float: left;
+    font-size: 21px;
+    line-height: 90px;
+    color: #fff;
+}
+.shop-show .content-title ul li:first-child a{
+    color: #3c9cd3;
+    background-color: #fff;
+    line-height: 85px;
+    border-bottom:5px solid #3c9cd3;
+}
+/*产品详情*/
+.shop-show .content-detail{
+    background-color: #fff;
+    padding:0 20%;
+    text-align: center;
+}
+.shop-show .content-detail .shop-des .part{
+    padding-top: 50px;
+    text-align: center;
+}
+.shop-show .content-detail .shop-des .part .des-title{
+    font-size: 33px;
+    font-weight:normal;
+    padding-bottom: 20px;
+    color: #0b5ae4;
+}
+.shop-show .content-detail .shop-des .part .des-detail{
+    font:normal 12px "微软雅黑",Arial, sans-serif;
+    line-height: 30px;
+    color: #b6b6b6;
+}
+.shop-show .content-detail .shop-des .part p:nth-of-type(2){
+    padding-bottom: 5px;
+}
+.shop-show .content-detail .shop-des .part p:nth-of-type(3){
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    line-height: 14px;
+}
+.shop-show .content-detail .shop-des .part .des-photo{
+    margin-top: 30px;
+}
+/*规格参数*/
+.shop-show .parameter{
+    background-color: #fff;
+    padding:20px 0;
+}
+/*更多产品*/
+.shop-show .more{
+    background-color: #fff;
+}
+.shop-show .more ul li{
+    display: inline-block;
+}
+.shop-show .more ul li a{
+    display: inline-block;
+    padding:50px 30px;
+}
+.shop-show .more ul li a img{
+    height: 168px;
+    width: 111px;
+}
+

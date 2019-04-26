@@ -1,0 +1,479 @@
+body{
+    background-color: #f6f6f6;
+}
+img{
+    align-items: center;
+}
+p{
+    text-align: center;
+    font: bold 14px "Adobe 黑体 Std",Arial, sans-serif;
+}
+span{
+     content: '';
+     font-family:"微软雅黑";
+     font-size:14px;
+     line-height: 40px;
+ }
+a{
+    text-decoration: none;
+    color: #000;
+}
+hr{
+    text-align: center;
+}
+/*主页主要信息部分css*/
+/*轮播图css*/
+.body .Rotation-chart{
+    /*height: 554px;*/
+    /*background-color: red;*/
+}
+.body .Rotation-chart a{
+    /*解决a标签与img标签下方有多出高度问题*/
+    display: block;
+    /*font-size:0;是因为a标签要为a中内容（文字）留高度，所以设置字体大小为0就能消除高度*/
+    font-size: 0;
+}
+/*主要信息*/
+.body .imp-msg{
+    padding:70px 15% 0;
+    height: 545px;
+    /*background-color: orange;*/
+}
+.body .imp-msg>div{
+    position: relative;
+    width: 31%;
+    height: 473px;
+    float: left;
+    /*left:155px;*/
+    /*top: 70px;*/
+    margin-left: 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.body .imp-msg>div .top{
+    position: relative;
+    height: 168px;
+}
+.body .imp-msg>div .top1{
+    background-color: #2394ca;
+}
+.body .imp-msg>div .top2{
+    background-color: #3ed1a4;
+}
+.body .imp-msg>div .top3{
+    background-color: #895ea3;
+}
+.body .imp-msg>div .top1::before{
+    content:"";
+    position: absolute;
+    right: 100%;
+    bottom: -20%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%);
+    border-top: 35px solid #2394ca;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+}
+.body .imp-msg>div .top2::before{
+    content:"";
+    position: absolute;
+    right: 100%;
+    bottom: -20%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%);
+    border-top: 35px solid #3ed1a4;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+}
+.body .imp-msg>div .top3::before{
+    content:"";
+    position: absolute;
+    right: 100%;
+    bottom: -20%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%);
+    border-top: 35px solid #895ea3;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+}
+.body .imp-msg>div .top>img{
+    position: relative;
+    margin-top: 15px;
+}
+.body .imp-msg>div .top>p{
+    font-size: 18px;
+    margin-top: 15px;
+    color:white;
+}
+.body .imp-msg .new-center .news-bottom{
+    position: relative;
+    height: 307px;
+}
+.body .imp-msg .new-center .news-bottom>p{
+    position: absolute;
+    font:bold 16px Adobe 黑体 Std,Arial, sans-serif;
+    top: 30px;
+    left: 27px;
+    text-align: left;
+}
+.body .imp-msg .new-center .news-bottom .mini{
+    position: absolute;
+    top: 59px;
+}
+.body .imp-msg .new-center .news-bottom .mini .mini-prc{
+    position: absolute;
+    left: 16px;
+    width: 100%;
+    height:auto;
+}
+.body .imp-msg .new-center .news-bottom .mini .mini-word>p{
+    position: relative;
+    width: 127px;
+    text-align: left;
+    left: 152px;
+    line-height:25px;
+}
+.body .imp-msg .new-center .news-bottom .list>ul>li>div>p{
+    position: relative;
+    text-align: left;
+    left:15px;
+    top:204px;
+    line-height:20px;
+}
+.body .imp-msg .new-center .news-bottom>hr{
+    position: absolute;
+    top: 178px;
+    text-align: center;
+    left:16px;
+    border:1px dashed #c4c4c4;
+}
+.body .imp-msg .information .bottom>div .body1{
+    text-align: left;
+    margin:30px 10%;
+}
+.body .imp-msg>div .bottom>div>img{
+    margin-top: 55px;
+    width: 80%;
+    height: auto;
+}
+.body .imp-msg>div .bottom>div .pro-name{
+    color: #3e9dcf;
+    font-size: 18px;
+}
+.body .imp-msg>div .bottom>div>p{
+    margin: 20px 30px;
+    /*margin-top: 20px;*/
+    /*margin-left:40px;*/
+    width: 220px;
+    font:bold 12px "Adobe 黑体 Std",Arial, sans-serif;
+}
+
+
+/*关于我们*/
+.body .about-us{
+    position: relative;
+    height: 497px;
+    /*background-color: pink;*/
+}
+/*联系我们*/
+.body .content-us{
+    height: 625px;
+    overflow: hidden;
+    /*background-color: green;*/
+}
+/*关于我们、联系我们的共类设置*/
+.body .content-us .msg{
+    position: relative;
+    padding:4% 10% 1%;
+    height: 80%;
+    /*box-sizing: border-box;可以解决div下方莫名其妙多出来的空间*/
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.body>div .us{
+    position: relative;
+    height: 20%;
+    text-align: center;
+    /*background-color: #6effd1;*/
+}
+.body>div .us .nav-title{
+    position: absolute;
+    width: 257px;
+    height: 50px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.body>div .us .nav-title>p{
+    font:bold 18px "微软雅黑",Arial, sans-serif;
+    display: inline-block;
+    width: 257px;
+    height: 50px;
+    line-height:50px;
+    border-bottom:1px solid #c9c9c9;
+}
+.body>div .us .nav-title>p::before{
+    content: 'STORE DISPLAY ';
+    position: absolute;
+    font: 12px "微软雅黑",Arial, sans-serif;
+    color:  #999999;
+    background-color: #f6f6f6;
+    width: 106px;
+    height: 19px;
+    text-align: center;
+    top:41px;
+    left:77px;
+}
+.body .about-us .ab-content{
+    position: absolute;
+    text-align: center;
+    /*top:150px;*/
+    /*background-color: #000;*/
+    background:url(../images/bg_b.jpg) repeat-x;
+    height: 80%;
+    width: 100%;
+}
+.body .about-us .ab-content .content-msg{
+    position: absolute;
+    top:49px;
+}
+.body .about-us .ab-content>div>p{
+    display: inline-block;
+    font: 14px "微软雅黑",Arial, sans-serif;
+    color: #272727;
+    width: 920px;
+}
+.body .about-us .ab-content .content-img{
+    position: relative;
+    text-align: center;
+    top:35%;
+    left: 50%;
+    width: 80%;
+    background-color: #fff;
+    transform: translate(-50%,0);
+}
+.body .about-us .ab-content .content-img img{
+    width: 30%;
+    height: auto;
+}
+
+/*联系我们*/
+.body .content-us>div .left-msg{
+    display: inline-block;
+    /*margin-top:52px;*/
+    /*margin-left:106px;*/
+}
+.body .content-us .left-msg .mini-msg li{
+    font: 14px "微软雅黑",Arial, sans-serif;
+    color: #666666;
+}
+.body .content-us .left-msg .mini-msg p{
+    display: inline-block;
+    font: 14px "微软雅黑",Arial, sans-serif;
+    height: 22px;
+    padding-left: 8px;
+    line-height: 22px;
+    /*color: #666666;*/
+}
+.body .content-us .left-msg .mini-msg img {
+    position: relative;
+    top: 3px;
+    width: 22px;
+    height: 22px;
+}
+.body .content-us .left-msg .map img{
+    margin-top: 30px;
+}
+/*右边css*/
+.body .content-us .right-msg{
+    position: absolute;
+    display: inline-block;
+    /*margin-top:52px;*/
+    width: 45%;
+    height: 83%;
+    margin-left:5%;
+    /*background-color: green;*/
+    box-sizing: border-box;
+}
+.body .content-us .right-msg>p{
+    text-align: left;
+    font: 14px "微软雅黑", Arial, sans-serif;
+    color:  #666666;
+    padding: 5px;
+}
+.content-us .right-msg>input{
+    width: 95%;
+    height: 9%;
+    border: 1px solid #000;
+    padding-left: 2px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+.content-us .right-msg>textarea{
+    width: 95%;
+    height: 33%;
+    padding-left: 2px;
+    font-size: 24px;
+    border: 1px solid #000;
+}
+.content-us .right-msg .submit{
+    display: block;
+    margin-top: 10px;
+    width: 95px;
+    height: 30px;
+    background-color: #3c9bd2;
+    border-radius: 3px;
+    border: none;
+    font: 12px "微软雅黑",Arial, sans-serif;
+    color: #ffffff;
+}
+/*响应式配置*/
+@media screen and (min-device-width:1440px){
+    /*无需配置*/
+}
+@media screen and (min-device-width:1024px) and (max-device-width: 1439px) {
+    .body .imp-msg {
+        padding: 70px 5% 0;
+    }
+    .body .content-us .msg {
+        padding: 4% 5% 1%;
+    }
+}
+@media screen and (min-device-width:768px) and (max-device-width: 1023px) {
+    .body .imp-msg {
+        padding: 0 15%;
+        display: block;
+        /*用来让子元素div将这个父元素div的高度撑开
+        注意点：
+        若父元素div有设置固定高度，则超出部分会变成滚动条
+        */
+        height:inherit;
+        overflow: auto;
+        /* background-color: orange; */
+    }
+    .body .imp-msg>div {
+        display: block;
+        margin:20px 0 20px 50%;
+        width: 70%;
+        height: 30%;
+        text-align: center;
+        transform: translate(-50%);
+        background-color: #ffffff;
+    }
+    .body .imp-msg>div .bottom .body1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .body .imp-msg>div .bottom>div>p {
+        margin: 10px 0;
+        width: inherit;
+    }
+    .body .imp-msg .new-center .news-bottom>hr {
+        top: 60%;
+        width: 95%;
+        left: 2%;
+    }
+    .body .imp-msg .new-center .news-bottom .mini .mini-word{
+        position: absolute;
+        display: block;
+        left: 50%;
+    }
+    .body>div .us {
+        height: 30%;
+    }
+    .body .content-us{
+        height: 400px;
+    }
+    .body .content-us .msg{
+        display: block;
+        height:inherit;
+        /*overflow: auto;*/
+    }
+    .body .content-us>div .left-msg,.body .content-us>div .right-msg{
+        display: block;
+    }
+    .body .content-us>div .left-msg .map{
+        position: absolute;
+        right: 5%;
+        top: 1%;
+    }
+    .body .content-us>div .right-msg{
+        display: none;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width: 767px) {
+    .body .imp-msg {
+        padding: 0 28%;
+        display: block;
+        /*用来让子元素div将这个父元素div的高度撑开
+        注意点：
+        若父元素div有设置固定高度，则超出部分会变成滚动条
+        */
+        height:inherit;
+        overflow: auto;
+        /* background-color: orange; */
+    }
+    .body .imp-msg>div {
+        display: block;
+        margin:20px 0 20px 50%;
+        width: 70%;
+        height: 30%;
+        text-align: center;
+        transform: translate(-50%);
+        background-color: #ffffff;
+    }
+    .body .imp-msg>div .bottom .body1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .body .imp-msg>div .bottom .body2{
+        width: 80%;
+    }
+    .body .imp-msg>div .bottom>div>p {
+        margin: 10px 0;
+        width: inherit;
+    }
+    .body .imp-msg .new-center .news-bottom>hr {
+        top: 60%;
+        width: 95%;
+        left: 2%;
+    }
+    .body .imp-msg .new-center .news-bottom .mini .mini-word{
+        position: absolute;
+        display: block;
+        left: 50%;
+    }
+    .body>div .us {
+        height: 30%;
+    }
+    .body .content-us{
+        height: 400px;
+    }
+    .body .content-us .msg{
+        display: block;
+        height:inherit;
+        /*overflow: auto;*/
+    }
+    .body .content-us>div .left-msg,.body .content-us>div .right-msg{
+        display: block;
+    }
+    .body .content-us>div .left-msg .map{
+        position: absolute;
+        right: 5%;
+        top: 1%;
+    }
+    .body .content-us>div .right-msg{
+        display: none;
+    }
+}
+
+
+
